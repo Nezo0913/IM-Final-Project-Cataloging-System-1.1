@@ -1,0 +1,207 @@
+Core Pages & Navigation
+Home Page (Public)
+
+Acts as the landing page of the system
+
+Accessible without logging in
+
+Must include:
+
+System title and university/department name
+
+Short description of the thesis cataloging system
+
+Call-to-action buttons:
+
+“Browse Theses”
+
+“Login”
+
+“Sign Up”
+
+Top Navigation Bar
+
+Positioned at the top of the page
+
+On the top-right corner, display:
+
+Login
+
+Sign Up
+
+After login, replace with:
+
+User name
+
+Logout button
+
+Responsive design for desktop and mobile
+
+User Authentication & Authorization
+User Roles
+
+Admin
+
+Full CRUD access to thesis records
+
+Viewer / Student
+
+Read-only access to thesis records
+
+Authentication Features
+
+Sign Up page
+
+Login page
+
+Logout functionality
+
+Password hashing (bcrypt)
+
+JWT or session-based authentication
+
+Protected routes for admin-only pages
+
+Thesis Categorization
+
+Two main categories:
+
+Frontend Development
+
+Web Development
+
+Each thesis belongs to one category only
+
+Year-Based Cataloging
+
+Theses are grouped by year (2020–present)
+
+Must dynamically support future years without manual updates
+
+Thesis Record Fields
+
+Each thesis must contain:
+
+Thesis title
+
+Author(s)
+
+Year of submission
+
+Category (Frontend / Web Development)
+
+Abstract or description
+
+Adviser (optional)
+
+Uploaded PDF document
+
+Date added (auto-generated)
+
+Backend Requirements
+
+Use Node.js with Express (or Python Flask)
+
+Use MongoDB / PostgreSQL / SQLite
+
+Implement RESTful APIs for:
+
+User registration
+
+User login
+
+Logout
+
+Add thesis (admin only)
+
+Update thesis (admin only)
+
+Delete thesis (admin only)
+
+Fetch all theses
+
+Filter theses by category and year
+
+Middleware for:
+
+Authentication
+
+Role-based authorization
+
+Secure PDF file upload handling
+
+Environment variables for secrets
+
+Input validation and error handling
+
+Frontend Requirements
+
+Use React, Vue, or vanilla HTML/CSS/JavaScript
+
+Modern, clean, university-appropriate UI
+
+Required Pages / Components
+
+Home Page (public)
+
+Login Page
+
+Sign Up Page
+
+Thesis Catalog Page
+
+Thesis Detail Page
+
+Admin Dashboard
+
+Add / Edit Thesis Form (admin only)
+
+UI Behavior
+
+Login / Sign Up buttons visible at top-right when logged out
+
+User menu + Logout visible at top-right when logged in
+
+Redirect unauthenticated users to login page
+
+Hide admin features from viewer accounts
+
+Dynamic year filter dropdown
+
+Search by title or author
+
+System Behavior & UX
+
+Combined filtering by category and year
+
+Immediate UI updates after CRUD actions
+
+Clear success and error messages
+
+Fully responsive layout
+
+Security Requirements
+
+Password hashing
+
+Route protection
+
+File type validation (PDF only)
+
+Prevent unauthorized admin access
+
+Deliverables
+
+Fully working frontend and backend
+
+Clear project folder structure
+
+Instructions to run the system in Replit
+
+Seed data including:
+
+1 admin account
+
+1 viewer account
+
+At least 5 theses across different years and categories
